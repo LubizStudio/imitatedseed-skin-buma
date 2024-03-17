@@ -1,4 +1,4 @@
-# theseed-skin-buma
+# imitatedseed-skin-buma
 Skin for imitated seed engine
 
 # CSS
