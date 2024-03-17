@@ -114,6 +114,14 @@
                         [관리] 로그인 내역 조회
                     </a>
                     {% endif %}
+                    {%if perms.has('aclgroup') %}
+                    <a class="navbar-item" href="/aclgroup">
+                        <span class="icon">
+                            <i class="fas fa-history"></i>
+                        </span>
+                        [관리] ACL Group
+                    </a>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -223,7 +231,7 @@
                 {% elseif skinInfo.viewName == 'notfound' %}
                 존재하지 않는 문서입니다. 직접 자유롭게 기여해보세요!
                 {% else %}
-                Powered by the seed engine
+                Powered by imitated seed engine
                 {% endif %}
                 {% if rev %}
                 (현재 r{{ rev }}판을 보고계십니다.)
